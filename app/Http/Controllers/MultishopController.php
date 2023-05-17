@@ -9,4 +9,7 @@ class MultishopController extends Controller
     function index_function(){
 		return view("multishop/index");
 	}
+	function content_function(){
+		return view("multishop/content");
+	}
 }

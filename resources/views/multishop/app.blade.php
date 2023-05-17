@@ -27,12 +27,15 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{{ asset('multishop/css/style.css') }}" rel="stylesheet">
+	@yield('style')
 </head>
 <body>
     <div id="app">
+		@yield('header')
         <main class="py-4">
             @yield('content')
         </main>
+		@yield('footer')
     </div>
 	<!-- Back to Top -->
     <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
@@ -44,4 +47,5 @@
     <script src="{{ asset('multishop/lib/owlcarousel/owl.carousel.min.js') }}"></script>
     <!-- Template Javascript -->
     <script src="{{ asset('multishop/js/main.js') }}"></script>
+	@yield('script')
 </html>

@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [App\Http\Controllers\MultishopController::class, 'index_function'])->name('index');
+Route::get('content', [App\Http\Controllers\MultishopController::class, 'content_function'])->name('content');
 
 Auth::routes();
 
